@@ -15,9 +15,15 @@ public class GameOver : MonoBehaviour {
 
 	void Update () {
 		if (gameOver) {
-			if (Input.GetKeyDown (KeyCode.Space)) {
-				SceneManager.LoadScene (0);
+			//if (Input.GetKeyDown (KeyCode.Space)) {
+			//	SceneManager.LoadScene (0);
+			//}
+
+			if (Input.touchCount > 0)
+			{
+				SceneManager.LoadScene(0);
 			}
+
 		}
 	}
 
